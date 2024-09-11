@@ -1,11 +1,19 @@
 import { useState } from "react";
+import "./BookForm.css";
 //
 const BookForm = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   //
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     // dispatch action
+    if (author && title) {
+      console.log(title, author);
+
+      setTitle("");
+      setAuthor("");
+    }
   };
   return (
     <div className="app-block book-form">
@@ -29,6 +37,7 @@ const BookForm = () => {
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
+        <button type="submit">Add book</button>
       </form>
     </div>
   );
