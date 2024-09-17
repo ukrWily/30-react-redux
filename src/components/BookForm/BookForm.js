@@ -9,8 +9,6 @@ const BookForm = () => {
     e.preventDefault();
     // dispatch action
     if (author && title) {
-      console.log(title, author);
-
       setTitle("");
       setAuthor("");
     }
@@ -20,7 +18,7 @@ const BookForm = () => {
       <h2>Add a New Book</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Title: </label>
           <input
             type="text"
             id="title"
@@ -29,7 +27,7 @@ const BookForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="author">Author</label>
+          <label htmlFor="author">Author: </label>
           <input
             type="text"
             id="author"

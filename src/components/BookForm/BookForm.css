@@ -19,9 +19,11 @@
   transition: all 0.3s;
 }
 .book-form input:focus {
-  box-shadow: none;
-  outline: 4px solid #0a1a2d;
-  box-shadow: 5px 5px 10px #0a1a2d;
+  border: none;
+  /* transform: scale(1.01); */
+  /*outline: 1px solid #0c12d1;
+  box-shadow: 3px 3px 7px #00050b; */
+  box-shadow: 4px 4px 10px #1454a3;
 }
 
 .book-form button {
