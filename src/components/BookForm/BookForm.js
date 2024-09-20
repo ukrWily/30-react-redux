@@ -19,8 +19,6 @@ const BookForm = () => {
         id: uuidv4(),
       };
 
-      console.log(addBook(book));
-
       dispatch(addBook(book));
 
       setTitle("");
