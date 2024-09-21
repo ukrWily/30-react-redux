@@ -31,12 +31,22 @@
   color: #fff;
   padding: 8px 12px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 10px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
 }
 
+.book-form button:hover {
+  background-color: #0056b3;
+  color: gold;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 1px #000;
+}
+.book-form button:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
 .book-form button:hover {
   background-color: #0056b3;
 }
