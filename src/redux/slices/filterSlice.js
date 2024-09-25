@@ -9,10 +9,17 @@ const filterSlice = createSlice({
   initialState,
   reducers: {
     setTitleFilter: (state, action) => {
+      //You can mutate state thanks to Immer library
+      // state.title = action.payload;
+
+      // Or you can also return new state as usually
       return { ...state, title: action.payload };
     },
   },
 });
 
-console.log(filterSlice.actions);
+export const { setTitleFilter } = filterSlice.actions;
+
+export const selectTitleFilter = (state) => state.filter.title;
+
 export default filterSlice.reducer;
