@@ -15,10 +15,13 @@ const filterSlice = createSlice({
       // Or you can also return new state as usually
       return { ...state, title: action.payload };
     },
+    resetFilter: (state) => {
+      return initialState;
+    },
   },
 });
 
-export const { setTitleFilter } = filterSlice.actions;
+export const { setTitleFilter, resetFilter } = filterSlice.actions;
 
 export const selectTitleFilter = (state) => state.filter.title;
 
